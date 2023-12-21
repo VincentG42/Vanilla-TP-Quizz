@@ -6,7 +6,7 @@
 
 
     <section class="container-sm">
-    <div class ="d-flex align-items-center flex-column mb-3">
+      <div class ="d-flex align-items-center flex-column mb-3">
            <button id="togg1">Connexion !</button>
            <div id="d1">
            <form action="/traitement.php" method="post">
@@ -14,8 +14,8 @@
                   <input type="text" class="form-control" id="pseudo">
                  <input type="submit" value="Envoyer">
             </form>
-           </div>
-    </div>
+</div>
+    </section>
 
      
 
