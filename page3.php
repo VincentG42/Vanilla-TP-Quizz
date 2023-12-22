@@ -1,63 +1,66 @@
-<?php 
-include_once "./header.php";
+<?php
+include_once("./header.php");
 
 require_once('./process/connect_db.php');
+
+include_once('./process/generate_quizz_v2.php');
+
+session_start()
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>page 3</title>
-</head>
-<body>
+
 
 
 <div id="BTNQuiz" class="container">
+  <div><?php echo isset($_SESSION['pseudo']) ? $_SESSION['pseudo'] : '???' ?></div>
 
-    <div class="">
+  <div>
+    <h2>Votre score est de <?php echo $_SESSION['score'] . '/' . $_SESSION['question_nb'] ?> </h2>
+  </div>
 
-      <div class="col-md-6">
+  <div id="timer" class="text-center">Temps restant : <span id="seconds">10</span> secondes</div>
 
-        <div class="text-center vertical-buttons">
+  <div id="BTNreponse">
+    <div> <?= 'Quesion N°' . $_SESSION['question_nb'] . ' /10' ?></div>
+    <div><?= '<div> ' . $question['question'] . '</div>' ?></div>
+  </div>
+  <div id="div_reponse" class="">
 
-          <button type="button" class="btn btn-primary mb-5">Bouton 1</button>
-          <button type="button" class="btn btn-secondary mb-5">Bouton 2</button>
+    <form name="qcm" class="answer_form" id="answer_form">
+      <?php foreach ($answsers as $answser) { ?>
+        <input class="submitresponse" type="radio" name="choix" value=<?= $answser['good_answer'] ?>><?= $answser['content'] ?></input>
+      <?php } ?>
+      <input type="button" class="checkbutton" name="bouton" value="Vérifier">
+    </form>
+  </div>
 
-        </div>
+  <div class="d-flex justify-content-center align-items-center">
 
-      </div>
+    <div>
+      <form action="./process/bouton_suivant.php" id="next_question_form" method="post">
+        <input type="hidden" name="scorequestion" id=score_question>
+        <input type="hidden" name="questionNb" value="<?= $_SESSION['question_nb'] = $_SESSION['question_nb'] + 1 ?>">
 
-      <div class="col-md-6">
+        <button id="next_question_button" class="hidden_button" name="next_question">Question suivante</button>
+      </form>
+      <form action="./process/gestion_session.php">
+    <button id="quizz_end" class ="hidden_button" name="quizz_end">Fin du quizz</button>
 
-        <div class="text-center horizontal-buttons">
-
-          <button type="button" class="btn btn-success mr-5">Bouton 3</button>
-          <button type="button" class="btn btn-danger">Bouton 4</button>
-
-        </div>
-
-      </div>
+    </form>
 
     </div>
 
-     <div class ="d-flex justify-content-center align-items-center">
-
-        <a href="./page4.php" class="btn btn-dark"> résultat !</a>
-
-     </div>
+  </div>
 
 
 </div>
 
 
+<script src="./js/timer.js"></script>
+<script src="./js/div_reponse.js"></script>
 
-setTimeout(bloquerDiv, 10000); 
-</script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></>
-</body>
-</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body> 
+  </html>

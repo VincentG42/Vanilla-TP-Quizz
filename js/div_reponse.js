@@ -1,42 +1,44 @@
 
 
 let divReponse = document.querySelector("#div_reponse");
-let cartes_reponse = document.querySelectorAll(".carte_reponse");
-// let submitresponses = document.querySelectorAll(".submitresponse");
+let reponses = document.querySelectorAll(".submitresponse");
+let qcm= document.querySelectorAll("#answer_form");
+let check= document.querySelector('.checkbutton')
+let nextQuestionButton =document.querySelector('#next_question_button');
+let scoreQuestion = document.querySelector('#score_question');
+// let numberOfQuestions = document.querySelector('#nombrequestion');
+let quizzEndButton = document.querySelector('#nombrequestion');
+let nextbutton =document.querySelector('#next_question_button');
 
-console.log(responseButtons);
-
-cartes_reponse.forEach(carte => {
+check.addEventListener('click',()=>{
     
-    carte.addEventListener('click', (event)=>{
-        // let responseButtons = document.querySelectorAll(".carte_reponse button");
-        // responseButtons.forEach(button =>{
-            //     button.disabled = true;
-            // })
-            // divReponse.classList.add("bgblue")
-            divReponse.classList.add("pointernone")
-            carte.classList.add ("redborder")
-            carte.classList.add ("greenborder")
-            event.preventDefault();
-            
-    });
+        nextQuestionButton.classList.remove('hidden_button')
+    
+    reponses.forEach(reponse =>{
+
+        if (reponse.checked === true){
+            // console.log(reponse.value)
+            scoreQuestion.value = reponse.value
+            // console.log(scoreQuestion.value);
+        }
         
-    });
+        reponse.classList.add('pointernone')
 
+    })
+})
+
+
+
+let count = 0;
+
+nextbutton.addEventListener('click', function() {
+    count =count+1;
   
+    if (count === 10) {
+      
+      this.disabled = true; // Désactive le bouton après 10 clics
+      nextQuestionButton.classList.remove('hidden_button')
+
     
-    // $('.answer_form').on('submit', function(){
-    //     $.ajax({
-    //         type:'post',
-    //         url:'./generate_quizz.php',
-    //         data: $('#answer_form').serialize(),
-         
-    //         success : function(response){
-    //             response
-    //         },
-    //         error: function(){
-    //             alert('error')
-    //         }
-    //     })
-    //     // event.preventDefault();
-    // })
+    }
+  });
