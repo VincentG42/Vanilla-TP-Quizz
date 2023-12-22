@@ -2,13 +2,36 @@
     pointer-events: none;
 }
 
-.redborder{
+.bgblue{
+    background-color: blue;
+}
+
+.isgood0 .redborder{
     border: solid 5px red;
     box-shadow: 0px 0px 15px 5px rgba(255,0,0,0.64);
 }
 
 
-.greenborder{
+.isgood1 .greenborder{
     border: solid 5px green;
     box-shadow: 0px 0px 15px 5px rgba(22,151,6,0.64);
+}
+
+
+#div_reponse{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black ;
+   
+}
+
+.carte_reponse{
+    height: 50px;
+    width: 100px;
+    background-color: cadetblue;
+    margin: 15px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
