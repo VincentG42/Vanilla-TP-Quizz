@@ -3,7 +3,6 @@ include_once ("./header.php");
 include_once("./process/check_db.php");
 
 require_once('./process/connect_db.php');
-
 session_start();
 $_SESSION['score']=0;
 $_SESSION['question_nb']=1;

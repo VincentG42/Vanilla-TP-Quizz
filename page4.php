@@ -2,6 +2,7 @@
 include_once "./header.php";
 
 require_once('./process/connect_db.php');
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +16,9 @@ require_once('./process/connect_db.php');
 <body>
 <div class="container mt-5">
     <div class="alert alert-success text-center" role="alert">
-      <h4 class="alert-heading">Félicitations "Joueur" !</h4>
+      <h4 class="alert-heading"><?php if (isset($_SESSION['pseudo'])): ?>
+            <p>Félicitations <?php echo htmlspecialchars($_SESSION['pseudo']); ?> !</p>
+        <?php endif; ?></h4>
     </div>
     <div class="alert alert-success text-center" role="alert">
       <h4 class="alert-heading">votre score : ?/10</h4>

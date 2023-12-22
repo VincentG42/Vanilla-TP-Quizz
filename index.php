@@ -1,11 +1,24 @@
+<?php 
+require_once('./process/connect_db.php');
+session_start();
 
+?>
+ 
+ <!DOCTYPE html>
+<html lang="en">
 
  <?php  
     include_once "./header.php";
-?>
+    ?>
 
-    
+      <div class ="  d-flex align-items-center flex-column mb-3  ">
+
     <div class ="  d-flex align-items-center flex-column mb-3  ">
+
+
+    <section class="container-sm">
+      <div class ="d-flex align-items-center flex-column mb-3">
+
            <button id="togg1">Connexion !</button>
            <div id="d1" >
            <form action="./process/traitement.php" method="post">
@@ -19,6 +32,8 @@
     <div class="container">
     <div class="table-container">
       <h2 class="text-center mb-4">Classement des Scores</h2>
+      <br>
+      <br>
       <table class="table table-striped">
         <thead>
           <tr>
@@ -29,15 +44,15 @@
         <tbody>
           <tr>
             <td>Joueur 1</td>
-            <td id="joueur1AScore">0</td>
+            <td id="joueur1AScore">10/10</td>
           </tr>
           <tr>
             <td>Joueur 2</td>
-            <td id="joueur2Score">0</td>
+            <td id="joueur2Score">9/10</td>
           </tr>
           <tr>
             <td>Joueur 3</td>
-            <td id="joueur3BScore">0</td>
+            <td id="joueur3BScore">8/10</td>
           </tr>
         </tbody>
       </table>
