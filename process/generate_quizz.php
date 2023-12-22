@@ -1,23 +1,5 @@
 <?php
-
-require_once('./connect_db.php');
-session_start();
-
-
-
-
-
-$request = $database->query("SELECT * FROM `questions` WHERE id= 3;");
-        
-$question3 = $request->fetch();
-
-$request = $database->query("SELECT * FROM `answers` WHERE id_questions= 3;");
-        
-$answsers = $request->fetchAll();
-// var_dump($answsers); essai randomisation order reponses
-// $answersrandom = array_rand($answers, 3);
-// var_dump($answersrandom);
-var_dump($_POST)
+include_once('../process/generate_quizz_v2.php')
 ?>
 
 <!DOCTYPE html>
