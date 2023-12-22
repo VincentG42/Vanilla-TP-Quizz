@@ -16,8 +16,14 @@
     include_once "./header.php";
 ?>
 
+<<<<<<< HEAD
     
     <div class ="  d-flex align-items-center flex-column mb-3  ">
+=======
+
+    <section class="container-sm">
+      <div class ="d-flex align-items-center flex-column mb-3">
+>>>>>>> b2460aa4ac9fa4ea642fd4b9e6541fa4b9d830d3
            <button id="togg1">Connexion !</button>
            <div id="d1" >
            <form action="./process/traitement.php" method="post">
@@ -25,8 +31,8 @@
                   <input type="text" class="form-control" id="pseudo" name = "pseudo">
                  <input type="submit" value="Envoyer">
             </form>
-           </div>
-    </div>
+</div>
+    </section>
 
     <div class="container">
     <div class="table-container">
