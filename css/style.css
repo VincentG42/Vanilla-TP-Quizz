@@ -1,4 +1,8 @@
-img  {
-    height: 30px;
-    width: 30px;
+#d1 {
+    display: none;
+}
+
+.BTNQuiz {
+    margin-top: 60px !important;
+
 }
