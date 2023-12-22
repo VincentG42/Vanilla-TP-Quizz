@@ -2,14 +2,8 @@
 require_once('./process/connect_db.php');
 session_start();
 
+include_once "./header.php";
 ?>
- 
- <!DOCTYPE html>
-<html lang="en">
-
- <?php  
-    include_once "./header.php";
-    ?>
 
       <div class ="  d-flex align-items-center flex-column mb-3  ">
 

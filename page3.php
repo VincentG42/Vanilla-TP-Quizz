@@ -59,7 +59,7 @@ session_start()
 <script src="./js/div_reponse.js"></script>
 
 
-setTimeout(bloquerDiv, 10000); 
+
 </script>
 
 

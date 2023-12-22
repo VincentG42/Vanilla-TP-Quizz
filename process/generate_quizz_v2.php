@@ -13,7 +13,7 @@ $question = $request->fetch();
 
 $idQuestion =$question['id'];
 
-var_dump($idQuestion);
+// var_dump($idQuestion);
 
 $request = $database->query("SELECT * FROM `answers` WHERE id_questions= '$idQuestion' AND RAND() ORDER BY RAND() LIMIT 4");
         
