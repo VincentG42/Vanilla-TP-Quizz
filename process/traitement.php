@@ -1,5 +1,8 @@
 <?php 
 require_once('./connect_db.php'); 
+session_start();
+
+
 
 if (
     isset($_POST['pseudo']) && !empty($_POST['pseudo'])) {
@@ -18,7 +21,7 @@ if (
         ]);
 
       }
-       
+         $_SESSION['pseudo']= $pseudo;
 
       header("Location: ../page2.php");      
     }

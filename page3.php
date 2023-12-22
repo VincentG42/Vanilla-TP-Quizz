@@ -17,7 +17,14 @@ require_once('./process/connect_db.php');
 
 <div id="BTNQuiz" class="container">
 
-    <div class="">
+
+
+
+<div id="timer" class ="text-center">Temps restant : <span id="seconds">10</span> secondes</div>
+
+
+
+    <div id ="BTNreponse" class="">
 
       <div class="col-md-6">
 
@@ -51,12 +58,34 @@ require_once('./process/connect_db.php');
 
 
 </div>
+<script>
+const maDiv = document.getElementById('BTNreponse');
+const secondsSpan = document.getElementById('seconds');
 
+function bloquerDiv() {
+  BTNreponse.style.pointerEvents = 'none';
+  BTNreponse.style.opacity = '0.5'; 
+}
+function updateTimer(seconds) {
+  secondsSpan.textContent = seconds;
+}
+
+let secondsLeft = 10;
+updateTimer(secondsLeft);
+
+const countdown = setInterval(() => {
+  secondsLeft--;
+  updateTimer(secondsLeft);
+
+  if (secondsLeft === 0) {
+    bloquerDiv();
+    clearInterval(countdown);
+  }
+}, 1000);
 
 
 setTimeout(bloquerDiv, 10000); 
 </script>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></>
 </body>

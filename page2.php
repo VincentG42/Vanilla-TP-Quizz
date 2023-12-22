@@ -2,6 +2,8 @@
 include_once "./header.php";
 
 require_once('./process/connect_db.php');
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +20,9 @@ require_once('./process/connect_db.php');
     <br>
 <div class="container">
     <div class="player-list">
-        <h1 class ="text-center mb-5">Salut "pseudo"</h1>
+        <h1 class ="text-center mb-5"><?php if (isset($_SESSION['pseudo'])): ?>
+            <p>Bonjour, <?php echo htmlspecialchars($_SESSION['pseudo']); ?> !</p>
+        <?php endif; ?></h1>
       <h2 class="text-center mb-4">Liste des joueurs récents</h2>
       <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
