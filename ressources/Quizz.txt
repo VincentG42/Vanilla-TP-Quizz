@@ -1,0 +1,197 @@
+
+
+QUIZZ tp Géographie
+
+30 question
+
+
+Facile
+
+    Quelle est la capitale de l'Espagne ? id 1
+        A) Barcelone
+        B) Lisbonne
+        C) Madrid (Bonne réponse)
+        D) Séville
+
+    Quelle est la capitale de l'Australie ? id 3
+        A) Sydney
+        B) Melbourne
+        C) Canberra (Bonne réponse)
+        D) Brisbane
+
+    Quelle est la capitale de l'Allemagne ? id 5
+        A) Berlin (Bonne réponse)
+        B) Munich
+        C) Hambourg
+        D) Francfort
+
+    Quelle est la capitale du Canada ?
+        A) Toronto
+        B) Ottawa (Bonne réponse)
+        C) Vancouver
+        D) Montréal
+
+    Quelle est la capitale de la France ?
+        A) Berlin
+        B) Rome
+        C) Madrid
+        D) Paris (Bonne réponse)
+
+    Quelle est la capitale du Brésil ?
+        A) Brasília (Bonne réponse)
+        B) Rio de Janeiro
+        C) São Paulo
+        D) Salvador
+
+    Quelle est la capitale de l'Italie ?
+        A) Vienne
+        B) Rome (Bonne réponse)
+        C) Bruxelles
+        D) Amsterdam
+
+    Quelle est la capitale du Japon ?
+        A) Tokyo (Bonne réponse)
+        B) Beijing
+        C) Séoul
+        D) Bangkok
+
+    Quelle est la capitale du Mexique ?
+        A) Cancún
+        B) Guadalajara
+        C) Mexico (Bonne réponse)
+        D) Monterrey
+
+    Quelle est la capitale de l'Inde ?
+
+    A) Mumbai
+    B) New Delhi (Bonne réponse)
+    C) Bangalore
+    D) Kolkata
+
+
+
+Moyen
+
+    Quelle est la capitale de la Russie ? id 7
+        A) Saint-Pétersbourg
+        B) Moscou (Bonne réponse)
+        C) Kiev
+        D) Minsk
+
+    Quelle est la capitale de l'Afghanistan ? id 9
+        A) Kaboul (Bonne réponse)
+        B) Islamabad
+        C) Téhéran
+        D) Bagdad
+
+    Quelle est la capitale de l'Égypte ? id 12
+        A) Alexandrie
+        B) Gizeh
+        C) Le Caire (Bonne réponse)
+        D) Louxor
+
+    Quelle est la capitale de l'Afrique du Sud ?
+        A) Pretoria (Bonne réponse)
+        B) Johannesbourg
+        C) Le Cap
+        D) Bloemfontein 
+
+    Quelle est la capitale de la Grèce ? id 13
+        A) Thessalonique
+        B) Athènes (Bonne réponse)
+        C) Patras
+        D) Héraklion
+
+    Quelle est la capitale du Pakistan ?
+        A) Karachi
+        B) Islamabad (Bonne réponse)
+        C) Lahore
+        D) Quetta
+
+    Quelle est la capitale du Nigeria ?
+        A) Lagos
+        B) Abuja (Bonne réponse)
+        C) Kano
+        D) Ibadan
+
+    Quelle est la capitale de la Suède ?
+        A) Oslo
+        B) Stockholm (Bonne réponse)
+        C) Copenhague
+        D) Helsinki
+
+    Quelle est la capitale du Maroc ?
+        A) Marrakech
+        B) Rabat (Bonne réponse)
+        C) Casablanca
+        D) Fès
+
+    Quelle est la capitale de l'Argentine ?
+        A) Rosario
+        B) Córdoba
+        C) Buenos Aires (Bonne réponse)
+        D) Mendoza
+
+
+Difficile
+
+    Quelle est la capitale du Kazakhstan ? id 15
+        A) Almaty
+        B) Astana (Bonne réponse)
+        C) Karaganda
+        D) Atyrau
+
+    Quelle est la capitale du Turkménistan ?
+        A) Achgabat (Bonne réponse)
+        B) Douchanbé
+        C) Tachkent
+        D) Bichkek
+
+    Quelle est la capitale de l'Ouzbékistan ?
+        A) Samarcande
+        B) Boukhara
+        C) Tachkent (Bonne réponse)
+        D) Fergana
+
+    Quelle est la capitale du Botswana ?
+        A) Gaborone (Bonne réponse)
+        B) Harare
+        C) Windhoek
+        D) Maputo
+
+    Quelle est la capitale du Bhoutan ? id 16
+        A) Thimphu (Bonne réponse)
+        B) Katmandou
+        C) Dacca
+        D) Colombo
+
+    Quelle est la capitale du Lesotho ?
+        A) Maseru (Bonne réponse)
+        B) Manzini
+        C) Gaborone
+        D) Mbabane
+
+    Quelle est la capitale de la Mongolie ?
+        A) Darkhan
+        B) Oulan-Bator (Bonne réponse)
+        C) Erdenet
+        D) Choibalsan
+
+    Quelle est la capitale du Tadjikistan ?
+        A) Khodjent
+        B) Douchanbé (Bonne réponse)
+        C) Istaravshan
+        D) Khorugh
+
+    Quelle est la capitale du Suriname ? 17
+        A) Paramaribo (Bonne réponse)
+        B) Cayenne
+        C) Georgetown
+        D) Willemstad
+
+    Quelle est la capitale du Zimbabwe ?
+        A) Harare (Bonne réponse)
+        B) Lusaka
+        C) Maputo
+        D) Luanda
+

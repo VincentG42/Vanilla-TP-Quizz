@@ -1,14 +1,14 @@
-
 const maDiv = document.getElementById('BTNreponse');
 const secondsSpan = document.getElementById('seconds');
 
 function bloquerDiv() {
-  BTNreponse.style.pointerEvents = 'none';
-  BTNreponse.style.opacity = '0.5'; 
+  div_reponse.style.pointerEvents = 'none';
+  div_reponse.style.opacity = '0.5'; 
 }
 function updateTimer(seconds) {
   secondsSpan.textContent = seconds;
 }
+
 
 let secondsLeft = 10;
 updateTimer(secondsLeft);
@@ -20,8 +20,9 @@ const countdown = setInterval(() => {
   if (secondsLeft === 0) {
     bloquerDiv();
     clearInterval(countdown);
+    nextQuestionButton.classList.remove('hidden_button')
   }
 }, 1000);
 
 
-setTimeout(bloquerDiv, 10000); 
+setTimeout(bloquerDiv, 10000);
